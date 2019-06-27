@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body> 
+    <h1 id="title">
+      Cooking Form
+    </h1>
+    <div id="form-outer">
+      <p id="description">
+        Help us better serve you by sharing some information with us!
+      </p>
+    
+    <form id="survey-form"> 
+      
+      <div class="name">
+      <label id="name-label">* Name:</label>
+      <input id="name"type="text" name="name" class="input-field" placeholder="Enter your name" required>
+      </input>
+      
+      </div>
+      
+      <div class="email">
+      <label id="email-label">* Email:</label>
+      <input id="email" type="email" name="email" class="input-field" placeholder="Enter your email" required>
+      </input>
+      </div>
+    
+    <div class="age">
+      <label id="number-label">* Age:</label>
+      <input id="number" type="number" name="age" class="input-field" placeholder="Age" required min="1" max="125">
+      </input>
+    </div>
+      <!--Below is Skill Level-->
+    
+    <div id="skill-level">
+      <label><b>Which option best describes your cooking skill level?</b></label>
+      <select id="dropdown" name="skill level">
+        <option value="none">None</option>
+        <option value="intermediate">Beginner</option>
+        <option value="pepper">Intermediate</option>
+        <option value="advanced">Advanced</option>
+        <option value="pro">Professional</option>
+      </select>
+      </div>
+      <!--Above is Skill Level-->
+      <div id="questions">
+        <b>Which days of the week do you cook most?</b></div>
+    <div id="questions">
+    <label><input type="radio" name="week-weekend" value="weekdays"> Weekdays</label>
+        <label><input type="radio" name="week-weekend" value="weekends"> Weekends</label>
+    </div>
+    
+    <div id="questions">
+      <b>What type of entrée would you like to cook next week?</b>
+    </div>
+    
+    <div id="questions">
+    <label><input type="checkbox" name="entree" value="chicken"> Chicken</label>
+        <label><input type="checkbox" name="entree" value="beef"> Beef</label>
+    <label><input type="checkbox" name="entree" value="pork"> Pork</label>
+    <label><input type="checkbox" name="entree" value="veg"> Vegetarian</label>
+    </div>
+      
+      <!--Below is Comment Area -->
+     
+    <div id="suggestions">
+      Share your comments with us below! 
+      </div>
+    <div id="comments">
+      <textarea placeholder="Type your comments here!"></textarea>
+    </div>
+      <!--Above is comment area -->
+     
+    <div id="button-position">
+      <button id="submit" type="submit" name="Submit">
+        Submit
+      </button>
+    </div>
+    
+      </form>
+</body>
+</html>
